@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+
+/*PF全ページ共通部分*/
+
+
+.pf_h1{
+    margin: 35px auto auto 40px;
+}
+
+nav#gnav{
+    width: 300px;
+    margin: 51px 35px auto auto;
+}
+
+ul.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav#gnav a{
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Hiragino Kaku Gothic ProN","MSゴシック",sans-serif;
+    font-weight: bold;
+    color: #333;
+    transition: 0.5s;
+    padding: 8px 10px 7px 10px;
+}
+
+nav#gnav a:hover{
+    color: #fff;
+    background-color: #58BAB7;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy{
+    font-size: 14px;
+    color: #333;
+}
+
+
+/*ホーム*/
+
+
+.pf{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    z-index: 10;
+}
+
+.box {
+    position   : relative;
+    width: 100%;
+    max-width  : 1920px;
+    height     : 880px;
+    margin     : auto;
+    overflow   : hidden;
+}
+
+.box .bgImg {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    bottom     : 0;
+    right      : 0;
+    opacity    : 0;
+    animation  : bgAnime 15s infinite;
+}
+
+.box .src1 {
+    background-image : url(../images/bg_1.jpg);
+}
+
+.box .src2 {
+    background-image : url(../images/bg_2.jpg);
+    animation-delay  : 5s;
+}
+
+.box .src3 {
+    background-image : url(../images/bg_3.jpg);
+    animation-delay  : 10s;
+}
+
+@keyframes bgAnime {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+   100% { opacity: 0; }
+}
+
+.box .boxString{
+    position   : absolute;
+    display    : inline-block;
+    font-size: 35px;
+    font-family: "ヒラギノ明朝 ProN","MS明朝",serif;
+    color      : #fff;
+    top        : 50%;
+    left       : 50%;
+    transform  : translate(-50%,-50%);
+    z-index    : 10;
+}
+
+
+/*全下層ページ共通*/
+
+
+.pf2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    background-color: rgb(255,255,255,0.5);
+    z-index: 10;
+}
+
+main{
+    padding: 120px 0 0 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Hiragino Kaku Gothic ProN","MSゴシック",sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin: 0 auto 90px auto;
+}
+
+span{
+    background: linear-gradient(transparent 60%, #58BAB7 0%);
+}
+
+
+/*プロフィール*/
+
+
+.prophoto{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto 80px auto;
+}
+
+.prophoto img{
+    border: 8px solid #58BAB7;
+    border-radius: 50%;
+}
+
+.profile_txt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: "Hiragino Kaku Gothic ProN","MSゴシック",sans-serif;
+    width: 350px;
+    margin: 0 auto 0 auto;
+    color: #333;
+    line-height: 50px;
+}
+
+.pro1{
+    text-align: right;
+}
+
+.profile_txt li{
+    margin: 0 0 60px 0;
+}
+
+
+/*WORK*/
+
+
+.work_list{
+    width: 85%;
+    max-width: 800px;
+    margin: 100px auto 0 auto;
+    border-bottom: 5px solid #58BAB7;
+    color: #333;
+}
+
+.work_list2{
+    width: 85%;
+    max-width: 800px;
+    margin: 100px auto 0 auto;
+    color: #333;
+}
+
+.work_list li{
+    margin: 0 0 150px 0;
+}
+
+.work_list2 li{
+    margin: 0 0 150px 0;
+}
+
+.work_photo{
+    width: 100%;
+}
+
+.movie{
+    margin: auto;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.work_list h3{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Hiragino Kaku Gothic ProN","MSゴシック",sans-serif;
+    font-weight: bold;
+    margin: 30px auto 0 auto;
+}
+
+.work_list2 h3{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Hiragino Kaku Gothic ProN","MSゴシック",sans-serif;
+    font-weight: bold;
+    margin: 30px auto 0 auto;
+}
+
+.about{
+    font-size: 27px;
+}
+
+.work_list p{
+    font-size: 16px;
+    font-family: "Hiragino Kaku Gothic ProN","MSゴシック",sans-serif;
+    line-height: 40px;
+    margin: 30px 0 0 0;
+}
+
+.work_list2 p{
+    font-size: 16px;
+    font-family: "Hiragino Kaku Gothic ProN","MSゴシック",sans-serif;
+    line-height: 40px;
+    margin: 30px 0 0 0;
+}
+
+.em_link{
+    font-family: "Hiragino Kaku Gothic ProN","MSゴシック",sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.em_link a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #d33;
+}
+
+.em_link a:hover{
+    color: #fff;
+    background-color: #58BAB7;
+    padding: 5px 10px 7px 10px;
+}
