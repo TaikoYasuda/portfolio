@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>運営元情報｜cafe・ド・リシャス公式サイト</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/drawer.css" rel="stylesheet">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(function(){
+    $(window).scroll(function (){
+    $('.fadein').each(function(){
+    var targetElement = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200){
+    $(this).css('opacity','1');
+    $(this).css('transform','translateY(0)');
+    }
+    });
+    });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $('.drawer').drawer();
+    });
+</script>
+</head>
+
+<body class="drawer drawer--right">
+
+<div class="contents1" data-enllax-ratio="-0.1">
+
+<header class="global-header">
+
+<h1 class="header__logo">
+    <a href="index.html">
+        <img src="images/logo2.png" alt="cafe・ド・リシャス" class="header__logo-photo">
+    </a>
+</h1>
+
+<nav class="gnav">
+    <ul class="gnav__menu">
+        <li><a href="index.html" class="gnav__link"><img src="images/whitebeen.png" class="bean">トップ</a></li>
+        <li><a href="about.html" class="gnav__link"><img src="images/whitebeen.png" class="bean">店舗案内</a></li>
+        <li><a href="campaign.html" class="gnav__link"><img src="images/whitebeen.png" class="bean">キャンペーン</a></li>
+        <li><a href="menu.html" class="gnav__link"><img src="images/whitebeen.png" class="bean">メニュー</a></li>
+        <li><a href="company.html" class="gnav__link"><img src="images/orangebean.png" class="bean">運営元情報</a></li>
+    </ul>
+</nav>
+
+<div class="hamburger">
+<button type="button" class="drawer-toggle drawer-hamburger">
+<span class="sr-only">toggle navigation</span>
+<span class="drawer-hamburger-icon"></span>
+</button>
+<nav class="drawer-nav" role="navigation">
+<ul class="drawer-menu">
+<li><a class="drawer-menu-item" href="index.html">トップ</a></li>
+<li><a class="drawer-menu-item" href="about.html">店舗案内</a></li>
+<li><a class="drawer-menu-item" href="campaign.html">キャンペーン</a></li>
+<li><a class="drawer-menu-item" href="menu.html">メニュー</a></li>
+<li><a class="drawer-menu-item" href="company.html">運営元情報</a></li>
+</ul>
+</nav>
+</div>
+
+</header>
+
+</div>
+
+
+<main class="global-main">
+
+<div class="contents2 contents24__company" data-enllax-ratio="0.5">
+</div>
+
+<div class="contents3 contents3__company" data-enllax-ratio="0.5">
+    <div class="section fadein">
+        <h2 class="sub-title"><span class="sub-title__under-line">会社概要</span></h2>
+        <table class="company-table">
+            <tr>
+                <th>名称</th>
+                <td>cafe・ド・リシャス 株式会社</td>
+            </tr>
+            <tr>
+                <th>所在地</th>
+                <td>〒160-0000 東京都新宿区新宿3丁目00-0
+                </td>
+            </tr>
+            <tr>
+                <th>代表取締役</th>
+                <td>安田大航</td>
+            </tr>
+            <tr>
+                <th>設立</th>
+                <td>20XX年XX月XX日</td>
+            </tr>
+            <tr>
+                <th>資本金</th>
+                <td>¥00,000,000</td>
+            </tr>
+            <tr>
+                <th>従業員</th>
+                <td>1X名</td>
+            </tr>
+            <tr>
+                <th>店舗数</th>
+                <td>1店舗</td>
+            </tr>
+            <tr>
+                <th>事業内容</th>
+                <td>コーヒーストアの経営/コーヒー及び関連商品の販売</td>
+            </tr>
+            <tr>
+                <th>株主</th>
+                <td>XXXXXXXXXX</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="contents4 contents24__company" data-enllax-ratio="0.5">
+</div>
+
+<div class="contents5" data-enllax-ratio="-0.1">
+
+<footer class="global-footer">
+    <p class="copy">〒160-0000 東京都新宿区新宿3丁目00-0
+    <br>TEL 03-3226-0000
+    <br>OPEN 11:00 - 20:00 LAST ORDER 19:30
+    <br>Copyright © 2021 cafe De licious Corporation All Rights Reserved
+    </p>
+</footer>
+
+</div>
+
+</main>
+
+
+</body>
+</html>

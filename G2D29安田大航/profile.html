@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+<title>Portfolio TaikoYasuda｜PROFILE</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    jQuery(function($){
+    $('.menu').on('click',function(){
+    $('.menu__line').toggleClass('active');
+    $('.gnav').fadeToggle();
+    });
+    });
+</script>
+<script>
+    $(function(){
+    $(window).scroll(function (){
+    $('.fadein').each(function(){
+    var targetElement = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200){
+    $(this).css('opacity','1');
+    $(this).css('transform','translateY(0)');
+    }
+    });
+    });
+    });
+</script>
+</head>
+<body>
+
+<a class="menu">
+    <span class="menu__line menu__line--top"></span>
+    <span class="menu__line menu__line--center"></span>
+    <span class="menu__line menu__line--bottom"></span>
+</a>
+<nav class="gnav">
+    <div class="gnav__wrap">
+        <ul class="gnav__menu">
+        <li class="gnav__menu__item"><a href="index.html">ホーム</a></li>
+        <li class="gnav__menu__item"><a href="profile.html">プロフィール</a></li>
+        <li class="gnav__menu__item"><a href="work.html">作品一覧</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<header class="pf2">
+
+<h1 class="pf_h1">
+    <img src="images/header_logo.png" alt="安田大航ポートフォリオ" class="header_logo">
+</h1>
+
+<nav id="gnav">
+<ul class="menu2">
+<li><a href="index.html">ホーム</a></li>
+<li><a href="profile.html">プロフィール</a></li>
+<li><a href="work.html">作品一覧</a></li>
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+<main>
+
+<div class="prophoto">
+    <img src="images/profile.png" alt="プロフィール">
+</div>
+
+<h2><span>プロフィール</span></h2>
+
+<div class="profile_txt">
+
+<ul class="pro1">
+    <li>名前</li>
+    <li>生年月日</li>
+    <li class="fadein">出身地</li>
+    <li class="fadein">特技</li>
+    <li class="fadein">趣味</li>
+</ul>
+
+<ul class="pro2">
+    <li>安田 大航</li>
+    <li>1999年3月27日(22歳)</li>
+    <li class="fadein">秋田県潟上市</li>
+    <li class="fadein">剣道(東北大会出場/四段)</li>
+    <li class="hobby fadein">海外サッカー<br>サッカーゲーム<br>バラエティ番組<br>テレビドラマ<br>深夜ラジオ</li>
+</ul>
+
+</div>
+
+</main>
+
+<footer>
+
+<p class="copy">
+ Copyright &copy; 2021 Taiko Yasuda All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
